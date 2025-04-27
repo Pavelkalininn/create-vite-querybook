@@ -1,8 +1,9 @@
 {
   "name": "create-vite-querybook",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Template generator of frontend pre-configured application React + Vite",
   "main": "lib/generator.js",
+  "type": "module",
   "bin": {
     "create-vite-querybook": "./bin/cli.js"
   },

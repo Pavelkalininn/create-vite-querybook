@@ -1,4 +1,4 @@
-### Template is in progress
+
 
 ## React vite template with preConfigured:
 
@@ -32,3 +32,9 @@
 ## installation
 
 `yarn install`
+
+
+## Start
+
+
+`yarn start`

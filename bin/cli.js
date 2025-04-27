@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 
-const { program } = require('commander');
-const generator = require('../lib/generator');
-const pkg = require('../package.json');
+import { program } from 'commander';
+import generator from '../lib/generator.js';
+import { readFile } from 'fs/promises';
+
+
+const pkg = JSON.parse(await readFile(new URL('../package.json', import.meta.url)));
 
 program
     .version(pkg.version)
