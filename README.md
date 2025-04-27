@@ -1,9 +1,13 @@
 Open-Source Project: React + Vite App Generator
 
+
 🚀 A CLI tool for bootstrapping React + Vite apps with preconfigured RTK, RTK Query, Storybook, TypeScript, ESLint, Prettier, Testing Library, and more.
 
 🔧 Goal: Save developers' time by providing ready-to-use templates instead of manual setup.
 
+
+
+### You can contribute at https://github.com/Pavelkalininn/create-vite-querybook
 Why Contribute?
 ✅ Beginner-friendly — First PR? No problem!
 ✅ Modular architecture — Easy to understand and extend.

@@ -1,12 +1,14 @@
 {
   "name": "create-vite-querybook",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Template generator of frontend pre-configured application React + Vite",
   "main": "lib/generator.js",
   "type": "module",
   "bin": {
     "create-vite-querybook": "./bin/cli.js"
   },
+  "homepage": "https://github.com/Pavelkalininn/create-vite-querybook",
+  "repository": "https://github.com/Pavelkalininn/create-vite-querybook",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
