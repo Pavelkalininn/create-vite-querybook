@@ -1,7 +1,7 @@
 Open-Source Project: React + Vite App Generator
 
 
-🚀 A CLI tool for bootstrapping React + Vite apps with preconfigured RTK, RTK Query, Storybook, TypeScript, ESLint, Prettier, Testing Library, and more.
+🚀 A CLI tool for React + Vite apps with preconfigured RTK, RTK Query, Axios, JWT reauth, Storybook, TypeScript, ESLint, Prettier, Testing Library, and more.
 
 🔧 Goal: Save developers' time by providing ready-to-use templates instead of manual setup.
 

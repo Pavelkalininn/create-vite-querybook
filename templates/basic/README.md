@@ -2,13 +2,18 @@
 
 ## React vite template with preConfigured:
 
+
 - Redux typescript hooks
 - RTK Query api
+- Axios
+- JWT reauth
 - Storybook
 - Husky
 - Pre-commit
 - Prettier
 - Eslint
+
+## Node version 20+ required
 
 ## Scripts
 
@@ -32,9 +37,13 @@
 ## installation
 
 `yarn install`
+or
+`npm install`
 
 
 ## Start
 
 
 `yarn start`
+or
+`npm start`

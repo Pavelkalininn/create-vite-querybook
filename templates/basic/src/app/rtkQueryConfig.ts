@@ -8,7 +8,6 @@ import type { AxiosRequestConfig, AxiosError } from 'axios'
 import { Mutex } from 'async-mutex'
 
 const mutex = new Mutex()
-const baseUrl: string = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
 
 export function axiosBaseQuery(): BaseQueryFn<
   {
@@ -29,7 +28,7 @@ export function axiosBaseQuery(): BaseQueryFn<
 
     try {
       const result = await axios({
-        url: baseUrl + '/api/' + url,
+        url: url,
         method,
         data,
         params,
@@ -77,7 +76,7 @@ export function baseQueryWithReauth({ baseUrl }: { baseUrl: string }): BaseQuery
 > {
   return async (args, api, extraOptions) => {
     await mutex.waitForUnlock()
-    let result = await baseQuery(args, api, extraOptions)
+    let result = await baseQuery({ ...args, url: baseUrl + args.url }, api, extraOptions)
     if (result.error?.status === 401) {
       if (!mutex.isLocked()) {
         const release = await mutex.acquire()
@@ -111,7 +110,7 @@ export function baseQueryWithReauth({ baseUrl }: { baseUrl: string }): BaseQuery
         }
       } else {
         await mutex.waitForUnlock()
-        result = await baseQuery(args, api, extraOptions)
+        result = await baseQuery({ ...args, url: baseUrl + args.url }, api, extraOptions)
       }
     }
     return result
