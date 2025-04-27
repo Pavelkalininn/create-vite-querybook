@@ -1,0 +1,111 @@
+{
+  "name": "vite-rtkq-husky-storybook",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Pavel Kalinin <oecb@ya.ru>",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "lint:fix": "eslint --fix .",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "vite",
+    "test": "vitest --run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest",
+    "type-check": "tsc -b --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build-storybook-docs": "storybook build --docs"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "async-mutex": "^0.5.0",
+    "axios": "^1.8.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.5.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@eslint/js": "^9.24.0",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/builder-vite": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/test": "^8.6.12",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "@vitest/coverage-v8": "^3.1.1",
+    "@vitest/eslint-plugin": "^1.1.42",
+    "@vitest/ui": "^3.1.1",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^0.12.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
+    "msw": "^2.7.4",
+    "msw-storybook-addon": "^2.0.4",
+    "prettier": "^3.5.3",
+    "storybook": "^8.6.12",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0",
+    "vite": "^6.2.4",
+    "vite-plugin-pwa": "^1.0.0",
+    "vite-plugin-svgr": "^4.3.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  },
+  "packageManager": "yarn@4.9.1",
+  "resolutions": {
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1"
+  }
+}

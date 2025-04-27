@@ -1,0 +1,62 @@
+//{
+//  "compilerOptions": {
+//    "baseUrl": ".",
+//    "paths": {
+//      "@demo/*": ["src/packages/demo/*"],
+//      "@/*": ["src/*"]
+//    },
+//    "strict": true,
+//    "esModuleInterop": true,
+//    "lib": ["dom", "es2015", "dom.iterable", "esnext"],
+//    "jsx": "react-jsx",
+//    "allowJs": true,
+//    "skipLibCheck": true,
+//    "allowSyntheticDefaultImports": true,
+//    "forceConsistentCasingInFileNames": true,
+//    "noFallthroughCasesInSwitch": true,
+//    "moduleResolution": "node",
+//    "resolveJsonModule": true,
+//    "isolatedModules": true,
+//    "noEmit": true,
+//    "target": "ES2020",
+//    "module": "esnext",
+//    "declaration": false,
+//    "noLib": false,
+//    "emitDecoratorMetadata": true,
+//    "experimentalDecorators": true,
+//    "sourceMap": true,
+//    "pretty": true,
+//    "allowUnreachableCode": true,
+//    "allowUnusedLabels": true,
+//    "noImplicitAny": true,
+//    "noImplicitReturns": false,
+//    "noImplicitUseStrict": false,
+//    "outDir": "dist/",
+//    "listFiles": false,
+//    "noEmitHelpers": true,
+//    "typeRoots": ["./node_modules/@types", "./src/types"],
+//    "types": ["jest", "node"],
+//
+//    "noUncheckedIndexedAccess": false
+//  },
+//  "compileOnSave": true,
+//  "include": [
+//    "./src/**/*",
+//    "declarations",
+//    "src",
+//    "./vitest.config.ts",
+//    ".storybook/*",
+//    "./src/vite-env.d.ts",
+//    "eslint.config.js",
+//    "public/mockServiceWorker.js"
+//  ],
+//  "exclude": ["*/src/libs/js/*", "node_modules"]
+//}
+
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
