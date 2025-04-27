@@ -1,0 +1,34 @@
+{
+  "name": "create-vite-querybook",
+  "version": "1.0.0",
+  "description": "Template generator of frontend pre-configured application React + Vite",
+  "main": "lib/generator.js",
+  "bin": {
+    "create-vite-querybook": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "template",
+    "generator",
+    "querybook",
+    "storybook",
+    "redux",
+    "RTK",
+    "RTK Query",
+    "eslint",
+    "prettier",
+    "pre-commit"
+  ],
+  "author": "Pavel Kalinin",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.6.0"
+  }
+}
