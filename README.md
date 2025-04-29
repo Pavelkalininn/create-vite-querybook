@@ -1,4 +1,4 @@
-Open-Source Project: React + Vite App Generator
+## Open-Source Project: React + Vite App Generator (RTK, RTK Query, Axios, JWT reauth, Storybook, TypeScript, ESLint, Prettier)
 
 
 🚀 A CLI tool for React + Vite apps with preconfigured RTK, RTK Query, Axios, JWT reauth, Storybook, TypeScript, ESLint, Prettier, Testing Library, and more.
@@ -7,11 +7,39 @@ Open-Source Project: React + Vite App Generator
 
 
 
+## Quick Start
+
+With yarn:
+
+```sh
+npx create-vite-querybook newApp
+cd newApp
+yarn install
+yarn start
+```
+
+
+With npm:
+
+```sh
+npx create-vite-querybook newApp
+cd newApp
+npm install
+npm start
+```
+
+## Requirements:
+
+Node 20+ (22 - perfect)
+
+
+
 ### You can contribute at https://github.com/Pavelkalininn/create-vite-querybook
 Why Contribute?
-✅ Beginner-friendly — First PR? No problem!
-✅ Modular architecture — Easy to understand and extend.
-✅ Active maintenance — Regular updates.
+
+    ✅ Beginner-friendly — First PR? No problem!
+    ✅ Modular architecture — Easy to understand and extend.
+    ✅ Active maintenance — Regular updates.
 
 How to Help?
 👨‍💻 For Developers
