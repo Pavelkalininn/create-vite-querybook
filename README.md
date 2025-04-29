@@ -28,6 +28,27 @@ npm install
 npm start
 ```
 
+### Or by create functions:
+
+```
+    yarn create vite-querybook newApp
+    cd newApp
+    yarn install
+    yarn start
+```
+
+ or 
+
+```
+    npm init vite-querybook newApp
+    
+    cd newApp
+    npm install
+    npm start
+```
+
+
+
 ## Requirements:
 
 Node 20+ (22 - perfect)
