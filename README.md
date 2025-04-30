@@ -53,6 +53,80 @@ npm start
 
 Node 20+ (22 - perfect)
 
+## Folder structure (default template)
+
+    newApp
+    ├── .husky
+    │   └── pre-commit
+    ├── .storybook
+    │   ├── handlers.ts
+    │   ├── main.ts
+    │   ├── mockConst.ts
+    │   └── preview.tsx
+    ├── public
+    │   └── mockServiceWorker.js
+    ├── src
+    │   ├── app
+    │   │   ├── providers
+    │   │   │   ├── Providers.test.tsx
+    │   │   │   └── Providers.tsx
+    │   │   ├── router
+    │   │   │   ├── index.tsx
+    │   │   │   └── Router.test.tsx
+    │   │   ├── createAppSlice.ts
+    │   │   ├── hooks.ts
+    │   │   ├── rootApi.ts
+    │   │   ├── rtkQueryConfig.ts
+    │   │   └── store.ts
+    │   ├── features
+    │   │   ├── counter
+    │   │   │   ├── Counter.module.css
+    │   │   │   ├── Counter.tsx
+    │   │   │   ├── CounterAPI.ts
+    │   │   │   ├── counterSlice.test.ts
+    │   │   │   └── counterSlice.ts
+    │   │   └── quotes
+    │   │       ├── Quotes.module.css
+    │   │       ├── Quotes.tsx
+    │   │       └── quotesApiSlice.ts
+    │   ├── packages
+    │   │   └── demo
+    │   │       ├── assets
+    │   │       │  ├── react.svg
+    │   │       │  └── vite.svg
+    │   │       ├── components
+    │   │       │  ├── Button
+    │   │       │  ├── Counter
+    │   │       │  └── index.ts
+    │   │       └── pages
+    │   │          └── Home
+    │   ├── types
+    │   │   └── importMeta.d.ts
+    │   ├──  utils
+    │   │   └── test-utils.tsx
+    │   ├── App.css
+    │   ├── App.test.tsx
+    │   ├── App.tsx
+    │   ├── index.css
+    │   ├── logo.svg
+    │   ├── main.tsx
+    │   ├── setupTests.ts
+    │   └── vite-env.d.ts
+    ├── .env.example
+    ├── .gitignore
+    ├── .prettierrc.json
+    ├── .yarnrc.yml
+    ├── eslint.config.js
+    ├── index.html
+    ├── LICENSE
+    ├── package.json
+    ├── README.md
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+    └── vitest.config.ts
+
 
 
 ### You can contribute at https://github.com/Pavelkalininn/create-vite-querybook
