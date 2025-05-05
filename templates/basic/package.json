@@ -2,7 +2,7 @@
   "name": "vite-rtkq-husky-storybook",
   "private": true,
   "version": "0.1.0",
-  "author": "Pavel Kalinin <oecb@ya.ru>",
+  "author": "Pavel Kalinin <pavelkalininn@gmail.com>",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",

@@ -66,6 +66,14 @@ export default defineConfig({
   resolve: { alias },
 
   base: '/',
+  build: {
+    rollupOptions: {
+      output: {
+        chunkFileNames: "[name].js",
+        assetFileNames: "[name].[ext]",
+      },
+    },
+  },
   server: {
     port: 3000,
     hmr: {
