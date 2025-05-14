@@ -17,22 +17,22 @@ export default defineConfig({
     svgr(),
     react(),
     {
-      name: 'treat-js-files-as-jsx',
+      name: "treat-js-files-as-jsx",
       async transform(code, id) {
-        if (!/src\/.*\.js$/.exec(id)) return null
+        if (!id.match(/src\/.*\.js$/)) return null;
 
-        // Use the exposed transform from vite, instead of directly
-        // transforming with esbuild
         return transformWithEsbuild(code, id, {
-          loader: 'jsx',
-          jsx: 'automatic',
-        })
+          loader: "jsx",
+          jsx: "automatic",
+        });
       },
     },
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        maximumFileSizeToCacheInBytes: 5 * 1024 ** 2, // 5 MB
+        cleanupOutdatedCaches: true,
+        navigateFallback: null,
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
       },
       manifest: {
         name: 'Vite React RTKQuery Storybook App Template',
@@ -64,7 +64,12 @@ export default defineConfig({
     }),
   ],
   resolve: { alias },
-
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+      generateScopedName: "[name]__[local]--[hash:base64:5]",
+    },
+  },
   base: '/',
   build: {
     rollupOptions: {
@@ -72,6 +77,11 @@ export default defineConfig({
         chunkFileNames: "[name].js",
         assetFileNames: "[name].[ext]",
       },
+    },
+    minify: "terser",
+    terserOptions: {
+      keep_classnames: true,
+      keep_fnames: true,
     },
   },
   server: {
