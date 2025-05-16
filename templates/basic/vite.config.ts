@@ -33,6 +33,7 @@ export default defineConfig({
         cleanupOutdatedCaches: true,
         navigateFallback: null,
         maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest}"],
       },
       manifest: {
         name: 'Vite React RTKQuery Storybook App Template',
