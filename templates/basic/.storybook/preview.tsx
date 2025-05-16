@@ -21,7 +21,7 @@ const preview = {
     },
     loaders: [
       () => {
-        window.localStorage.setItem('projectCode', 'GCC')
+        window.localStorage.setItem('projectCode', 'PRES')
       },
     ],
   },
