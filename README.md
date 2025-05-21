@@ -116,6 +116,7 @@ Node 20+ (22 - perfect)
     ├── .gitignore
     ├── .prettierrc.json
     ├── .yarnrc.yml
+    ├── codegen.ts
     ├── eslint.config.js
     ├── index.html
     ├── LICENSE
