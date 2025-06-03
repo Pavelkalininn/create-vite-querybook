@@ -1,7 +1,7 @@
 {
   "name": "vite-rtkq-husky-storybook",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.16",
   "author": "Pavel Kalinin <pavelkalininn@gmail.com>",
   "type": "module",
   "scripts": {
